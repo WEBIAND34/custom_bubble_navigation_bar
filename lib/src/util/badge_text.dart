@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class BadgeText extends StatelessWidget {
   const BadgeText({
     Key? key,
+    this.backgroundColor,
     this.count,
     this.right,
     this.show,
@@ -16,6 +17,8 @@ class BadgeText extends StatelessWidget {
 
   final bool? show;
 
+  final Color? backgroundColor;
+
   @override
   Widget build(BuildContext context) {
     return Positioned(
@@ -25,7 +28,7 @@ class BadgeText extends StatelessWidget {
           ? Container(
               padding: const EdgeInsets.all(2),
               decoration: BoxDecoration(
-                color: Colors.red,
+                color: backgroundColor,
                 borderRadius: BorderRadius.circular(6),
               ),
               constraints: const BoxConstraints(

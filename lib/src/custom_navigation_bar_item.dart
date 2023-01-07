@@ -27,6 +27,7 @@ class CustomNavigationBarItem {
     this.title,
     Text? selectedTitle,
     this.badgeCount = 0,
+    this.badgeBackground=Colors.black,
     this.showBadge = false,
   })  : selectedIcon = selectedIcon ?? icon,
         selectedTitle = selectedTitle ?? title;
@@ -35,6 +36,8 @@ class CustomNavigationBarItem {
   /// The icon of the item
   /// Typically the icon is an [Icon].
   ///
+
+  
 
   final Widget icon;
 
@@ -60,4 +63,6 @@ class CustomNavigationBarItem {
 
   /// hide or show badge
   final bool showBadge;
+
+  final Color badgeBackground;
 }

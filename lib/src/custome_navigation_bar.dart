@@ -422,6 +422,7 @@ class _CustomNavigationBarTile extends StatelessWidget {
             show: item!.showBadge,
             count: item!.badgeCount,
             right: 0.0,
+            backgroundColor: item!.badgeBackground,
           )
         ],
       ),
